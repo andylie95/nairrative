@@ -45,7 +45,7 @@ st.title("🎯 NAIrrative: Simulasi Dunia Kerja Interaktif untuk Melatih Soft Sk
 # ====== Form Nama dan Umur ======
 with st.form("user_info"):
     name = st.text_input("Nama lengkap")
-    age = st.number_input("Umur", min_value=15, max_value=100, step=1)
+    age = st.number_input("Umur", min_value=0, max_value=100, step=1)
     submitted = st.form_submit_button("Lanjutkan")
 
 if submitted and name:
