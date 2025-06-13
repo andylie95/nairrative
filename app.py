@@ -39,7 +39,7 @@ def analyze_sentiment(text):
         return "neutral"
 
 # ====== Setup Streamlit App ======
-st.set_page_config(page_title="KerjaTayang", layout="centered")
+st.set_page_config(page_title="NAIrrative", layout="centered")
 st.title("🎯 NAIrrative: Simulasi Dunia Kerja Interaktif untuk Melatih Soft Skill")
 
 # ====== Form Nama dan Umur ======
@@ -66,7 +66,7 @@ if st.session_state.get("ready"):
     age = st.session_state["age"]
 
     role_options = questions_df["Role"].dropna().unique().tolist()
-    selected_role = st.selectbox("Pilih peran kerja:", [""] + role_options)
+    selected_role = st.selectbox("Pilih aspirasi karir:", [""] + role_options)
 
     if selected_role:
         st.session_state["role"] = selected_role
