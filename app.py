@@ -45,7 +45,7 @@ st.title("🎯 NAIrrative: Pelatihan Softskill dalam Genggaman via Simulasi Kari
 # ====== Form Nama dan Umur ======
 with st.form("user_info"):
     name = st.text_input("Nama")
-    age = st.number_input("Umur", max_value=100, step=1)
+    age = st.number_input("Umur", max_value=10, max_value=100, step=1)
     submitted = st.form_submit_button("Lanjutkan")
 
 if submitted and name:
