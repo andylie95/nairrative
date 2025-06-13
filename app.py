@@ -86,7 +86,7 @@ if st.session_state.get("simulate"):
     simulation_data = questions_df[questions_df["Role"] == role]
 
     for i, row in simulation_data.iterrows():
-        st.subheader(f"Skenario {i+1}")
+        st.subheader(f"Skenario")
         st.markdown(row["Scenario"])
         response = st.text_area("Jawabanmu:", key=f"response_{i}")
         st.session_state["answers"][i] = {
