@@ -81,7 +81,7 @@ if st.session_state.get("ready"):
 
 # ====== Simulasi ======
 if st.session_state.get("simulate"):
-    st.header("🧪 Simulasi Soft Skill")
+    st.header("Simulasi Soft Skill")
     role = st.session_state["role"]
     simulation_data = questions_df[questions_df["Role"] == role]
 
