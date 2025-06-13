@@ -40,7 +40,7 @@ def analyze_sentiment(text):
 
 # ====== Setup Streamlit App ======
 st.set_page_config(page_title="KerjaTayang", layout="centered")
-st.title("🎯 NAIrrative: Platform Simulasi Karir Interaktif untuk Melatih Soft Skill")
+st.title("🎯 NAIrrative: Simulasi Dunia Kerja Interaktif untuk Melatih Soft Skill")
 
 # ====== Form Nama dan Umur ======
 with st.form("user_info"):
