@@ -44,7 +44,7 @@ st.title("🎯 NAIrrative: Pelatihan Softskill dalam Genggaman via Simulasi Kari
 
 # ====== Form Nama dan Umur ======
 with st.form("user_info"):
-    name = st.text_input("Nama lengkap")
+    name = st.text_input("Nama")
     age = st.number_input("Umur", min_value=0, max_value=100, step=1)
     submitted = st.form_submit_button("Lanjutkan")
 
@@ -70,7 +70,7 @@ if st.session_state.get("ready"):
 
     if selected_role:
         st.session_state["role"] = selected_role
-        st.markdown(f"👋 Halo **{name}** (umur {age}), kamu ingin menjadi **{selected_role}**.")
+        st.markdown(f"👋 Halo **{name}**, kamu ingin menjadi **{selected_role}**.")
         required_skills = questions_df[questions_df["Role"] == selected_role]["Skills"].unique().tolist()
         st.markdown(f"🧠 Maka kamu perlu menguasai soft skills berikut:")
         for skill in required_skills:
